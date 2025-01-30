@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Protest+Strike&family=Space+Grotesk:wght@300..700&display=swap');
+
+body {
+    background-color: black;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-side {
+    margin-bottom: 50px;
+}
+
+.top-side h1, p {
+    text-align: center;
+    color: #f1f1f1;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.top-side h1 {
+    font-size: 3vw;
+}
+
+.top-side h1::selection {
+    color: black;
+    background-color: #f1f1f1;
+}
+
+.top-side .buttons {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.top-side .buttons button {
+    padding: 10px 20px;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: #f1f1f1;
+    color: #333;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.top-side .buttons button:hover {
+    color: #f1f1f1;
+    background-color: #333;
+    transform: translateY(2px);
+}
+
+img {
+    border-radius: 10px;
+    width: 50%;
+}
+
+p {
+    font-size: 1.2vw;
+}
+p::selection {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+#play_sound {
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 2vw;
+
+    transition: .3s ease-in-out;
+}
+#play_sound:hover {
+    background-color: #8cd36b;
+    transform: translateY(2px);
+}
+
+@media screen and (max-width: 600px) {
+    
+    .container {
+        width: 80vw;
+    }
+
+    .top-side h1 {
+        font-size: 7vw;
+    }
+
+    .top-side .buttons button {
+        font-size: 4vw;
+    }
+        
+    img {
+        width: 90%;
+    }
+
+    p {
+        font-size: 3.5vw;
+    }
+
+    #play_sound {
+        font-size: 5vw;
+    }
+}
